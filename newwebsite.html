@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website from before and after pseudo selectors</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        .navigation{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 344px;
+            margin: 56px 260 px;
+            align-items: center;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900');
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>WELCOME TO CODING WORLD</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit velit corporis, quidem autem dignissimos ipsa dicta architecto ut incidunt aspernatur odio mollitia quis. Ipsum, labore aut exercitationem voluptatibus maxime hic aliquam quisquam sed ipsam, in dicta voluptatem asperiores doloribus commodi dolorum facilis inventore excepturi sapiente.</p>
+    </section>
+</body>
+</html>
